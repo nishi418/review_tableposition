@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #777;
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  background: #333;
+}
+
+.headerContainer {
+  position: relative;
+}
+
+.navi {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+  /* 以下23行目の記述で。子要素のliタグの幅が均一になる */
+  table-layout: fixed; 
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.navi li {
+  border-right: 1px solid #999;
+  list-style: none;
+  display: table-cell;
+  vertical-align: center;
+  line-height: 50px;
+  font-size: 15px;
+}
+
+.naviLeft {
+  border-left: 1px solid #999;
+}
+
+.navi .fa {
+  margin-right: 8px;
+}
+
+.navi li:hover {
+  cursor: pointer;
+  color: olive;
+}
+
+.headerLeft {
+  position: absolute;
+  top: 30%;
+  left: 90px;
+}
+
+.headerLeft h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.headerRight {
+  position: absolute;
+  top: 30%;
+  right: 70px;
+}
+
+.headerRight a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.headerRight .fa {
+  margin-right: 8px;
+}
+
+.sectionTitle {
+  text-align: center;
+}
+
+.sectionTitle h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+  
+}
+
+.portfolio {
+  border-bottom: 1px solid #333;
+}
+
+.portfolioContainer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.portfolioImg {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: table;
+  table-layout: fixed;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.portfolioImg li {
+  display: table-cell;
+  vertical-align: center;
+  border-right: 10px solid white;
+}
+
+.portfolioImg li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.portfolioImg1 {
+  border-left: 10px solid white;
+}
+
+.pages {
+  display: table;
+  table-layout: fixed;
+  width: 10%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.pages li {
+  display: table-cell;
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pages li:hover {
+  color: olive;
+  background: #333;
+}
+
+.portfolio2 {
+
+}
+
+.portfolioContainer2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.portfolioGroup {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolioContent{
+  position: relative;
+  width: 25%;
+}
+
+.portfolioContent img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.portfolioContent p {
+  text-align: center;
+  letter-spacing: 1px;
+  width: auto;
+  padding: 5px 10px;
+  background: rgba(63, 191, 191, 0.73);
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.review {
+  overflow: hidden;
+  text-align: center;
+}
+
+.review h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.review  p{
+  margin-top: 0;
+  margin-bottom: 0;
+  
+}
