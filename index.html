@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/06f5b1ef9f.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table&position</title>
+</head>
+<body>
+
+<!-- ヘッダー開始 -->
+  <header>
+    <div class=headerContainer>
+      <ul class="navi">
+        <li class="naviLeft"><span class="fa fa-home"></span>Home</li>
+        <li><span class="fa fa-html5"></span>Web Design</li>
+        <li><span class="fa fa-desktop"></span>Works</li>
+        <li><span class="fa fa-address-card"></span>About</li>
+        <li><span class="fa fa-envelope"></span>Contact</li>
+      </ul>
+      <div class="headerLeft">
+        <h3>T&P</h3>
+      </div>
+      <div class="headerRight">
+        <a href="#"><span class="fa fa-facebook"></span></a>
+        <a href="#"><span class="fa fa-twitter"></span></a>
+        <a href="#"><span class="fa fa-instagram"></span></a>
+      </div>
+    </div>
+  </header>
+<!-- ヘッダー終了 -->
+
+<!-- ポートフォリオ1開始 -->
+  <div class="portfolio">
+    <div class="portfolioContainer">
+      <div class="sectionTitle">
+        <h2>display:table</h2>
+      </div>
+      <ul class="portfolioImg">
+        <li><img class="portfolioImg1" src="img/brunch2.png" alt="#" width="300px" height="200px"></li>
+        <li><img src="img/concept2.png" alt="#" width="300px" height="200px"></li>
+        <li><img src="img/inside1.png" alt="#" width="300px" height="200px"></li>
+        <li><img src="img/topimg.png" alt="#" width="300px" height="200px"></li>
+      </ul>
+      <ul class="pages">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      <div class="review">
+        <h1>Review</h1>
+        <p>親要素に、"display:table;"と"table-layout:fixed;"を指定。子要素に、"display:table-cell"と"vertical-align:center;"を指定。<br>メリット：要素増やしても要素の幅が一定に保たれる。<br>デメリット：要素間のスペースが指定できない。上記はborderの白を使って余白に見せているだけ。</p>
+      </div>
+    </div>
+  </div>
+<!-- ポートフォリオ1終了 -->
+
+<!-- ポートフォリオ2開始 -->
+<div class="portfolio2">
+  <div class="portfolioContainer2">
+    <div class="sectionTitle">
+      <h2>display:flex & position</h2>
+    </div>
+    <div class="portfolioGroup">
+      <div class="portfolioContent">
+        <img src="img/brunch2.png" alt="#" width="300px" height="200px">
+        <p>dinner</p>
+      </div>
+      <div class="portfolioContent">
+        <img src="img/concept2.png" alt="#" width="300px" height="200px">
+        <p>city</p>
+      </div>
+      <div class="portfolioContent">
+        <img src="img/inside1.png" alt="#" width="300px" height="200px">
+        <p>coffee shop</p>
+      </div>
+      <div class="portfolioContent">
+        <img src="img/topimg.png" alt="#" width="300px" height="200px">
+        <p>coffee & cake</p>
+      </div>
+    </div>
+    <ul class="pages">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <div class="review">
+      <h1>Review</h1>
+      <p>親要素を作って、"position:relative"。そこに、imgタグとpタグを内包。子要素には"position:absolute;"。<br>pタグは"width:auto" & paddingを設定するといい感じになる。</p>
+    </div>
+  </div>
+</div>
+<!-- ポートフォリオ2終了 -->
+
+</body>
+</html>
